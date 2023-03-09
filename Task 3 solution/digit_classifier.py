@@ -24,7 +24,7 @@ class DigitClassiier:
             raise TypeError('input type should be numpy.ndarray')
         if not len(sample.shape)==3:
             raise Exception('input array should be 3-dimensional')
-        if not (sample.shape[0]==sample.shape[1]==28 and shape.[2]==1):
+        if not (sample.shape[0]==sample.shape[1]==28 and sample.shape[2]==1):
             raise Exception('input array shape should be (28,28,1)')        
         if self.model_type=='rf':
             sample = np.ravel(sample)
